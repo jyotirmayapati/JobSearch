@@ -4,9 +4,7 @@ import { fetchJobs } from "../services/api";
 const JobListing = () => {
   const [jobs, setJobs] = useState([]);
 
-  useEffect(() => {
-    fetchJobs().then(setJobs);
-  }, []);
+  useEffect(() => { fetchJobs().then(setJobs); }, []);
 
   return (
     <div className="p-6">
